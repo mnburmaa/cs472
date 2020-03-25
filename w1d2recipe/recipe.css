@@ -1,0 +1,39 @@
+h1 {
+  background-color: #f0f0f0;
+  color: #a4a400;
+  font-family: 'Lucida Sans Unicode', Helvetica, Arial;
+  font-size: 18pt;
+  text-decoration: underline;
+  text-align: left;
+}
+
+h1:first-child {
+  font-size: 22pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+#check_section {
+  text-align: right;
+}
+
+#copyright_section {
+  text-align: right;
+  font-family: monospace;
+}
+
+a {
+  color: #a4a400;
+}
+#comment_section p {
+  background-color: #ffffa8;
+  margin-left: 20px;
+}
+
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: #404040;
+  font-size: 11pt;
+  font-family: Georgia, Garamond, serif;
+}
