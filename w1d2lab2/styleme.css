@@ -1,0 +1,67 @@
+body {
+  background: url('images/bg.jpg') no-repeat center center fixed #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+}
+
+#intro_section {
+  background-color: #290707b0;
+  color: white;
+  text-align: right;
+}
+span.myname {
+  font-family: 'Schoolbell', arial, serif;
+  color: #f8b77f;
+  font-size: large;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #f8b77f;
+  font-weight: bold;
+}
+span.mng {
+  font-weight: bold;
+  color: #ce0000;
+}
+span.blue {
+  color: #3aacef;
+}
+span {
+  text-transform: uppercase;
+}
+#courses_section {
+  background-color: #ffffffdf;
+}
+
+#favourites_section {
+  background-color: #290707b0;
+  color: #f8b77f;
+}
+#favourites_section a {
+  color: #ffffff;
+}
+#mood_section {
+  background-color: #ffffffdf;
+  padding: 20px;
+}
+#mood_section img {
+  height: 200px;
+  width: 400px;
+  border: 2px double #f8b77f;
+}
+#mood1 {
+  padding-right: 20px;
+  float: left;
+}
+h4.mood_title {
+  text-align: center;
+}
+#neighbors_section {
+  padding: 20px;
+  background-color: #290707b0;
+  color: #ffffff;
+}
