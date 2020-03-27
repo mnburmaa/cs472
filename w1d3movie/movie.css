@@ -1,0 +1,60 @@
+/** This is movie css file **/
+/* description: for lab assignment week 1 day4 */
+body {
+  background: url('background.png');
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+#banner_section {
+  background: url('bannerbg.png');
+  text-align: center;
+}
+
+#title_header {
+  text-align: center;
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Vedena, sans-serif;
+  text-shadow: 3px 3px #999999;
+}
+
+#main_content_section {
+  width: 800px;
+  border: 4px solid gray;
+  border-radius: 20px;
+  margin: auto;
+}
+#overview_section {
+  float: right;
+  width: 250px;
+  /*background-color: #E8DC9B;*/
+  background-color: #a2b964;
+  border-top-right-radius: 15px;
+}
+#overview_section img {
+  border-top-right-radius: 15px;
+}
+#sub_header_section {
+  background: url('rbg.png');
+  font-size: 48pt;
+  color: red;
+  font-weight: bold;
+  height: 83px;
+  line-height: 83px;
+  text-align: left;
+  border-top-left-radius: 15px;
+}
+#sub_header_section img {
+  float: left;
+  border-top-left-radius: 15px;
+}
+#sub_header_section span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#review_section {
+  width: 550px;
+}
