@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- EXTERNAL STYLESHEET-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="login-form-handler" id="login-form" novalidate method="POST">
+      <fieldset>
+        <legend></legend>
+        <div class="form-group">
+          <label for="emailAddress">Email address</label>
+          <input pattern="\d{10}" required class="form-control" type="email" name="emailAddress" id="emailAddress" placeholder="Enter email" autofocus/>
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend></legend>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input pattern="" required class="form-control" type="password" name="password" id="password" placeholder="Password" autofocus/>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <input type="checkbox" id="checkout" name="checkout" value="Checked"/>
+        <label for="checkout">Check me out</label>
+      </div>
+      <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
