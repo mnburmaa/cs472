@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- EXTERNAL STYLESHEET-->
+    <link rel="stylesheet" href="./css/styles2.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!--TODO add nav here -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"
+          >MUM Golden Dome Market : : : SRM system</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active menuItem">
+              <a class="nav-link" href="index.html">Products </a>
+            </li>
+            <li class="nav-item active menuItem">
+              <a class="nav-link" href="about.html">Suppliers</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <span class="text-light mr-2">Hello!</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-light" type="submit">
+              Sign Out
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <!-- TODO Add content here -->
+        <!-- CSS IN-LINE STYLE -->
+        <h1>
+          New Product Form
+        </h1>
+        <form action="" novalidate class="needs-validation">
+          <div class="form-row">
+            <div class="col-md-6 mb-2">
+              <label for="pNumber">Product Number</label>
+              <input
+                type="text"
+                id="pNumber"
+                name="Product Number"
+                class="form-control"
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <label for="quantity">Quantity in stock</label>
+              <input
+                type="text"
+                id="quantity"
+                class="form-control"
+                placeholder="0"
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-2">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <div class="form-group">
+                <label for="supplier">Supplier</label>
+                <select name="" id="supplier" class="form-control">
+                  <option value="Supplier1">Supplier1</option>
+                  <option value="Supplier2">Supplier2</option>
+                  <option value="Supplier3">Supplier3</option>
+                  <option value="Supplier4">Supplier4</option>
+                  <option value="Supplier5">Supplier5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-2">
+              <label for="price">Unit Price</label>
+              <input
+                type="text"
+                id="price"
+                class="form-control"
+                placeholder="0.0"
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <div class="form-group">
+                <label for="dateSupplied">Date supplied</label>
+                <input
+                  type="date"
+                  id="dateSupplied"
+                  data-provide="datepicker"
+                  class="form-control datepicker"
+                  data-date-format="yyyy-mm-dd"
+                />
+                <small>Enter a valid Date</small>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-2"></div>
+            <div class="col-md-6 mb-2">
+              <div class="float-right">
+                <button class="btn btn-outline-secondary">
+                  Reset
+                </button>
+                <button class="btn btn-outline-warning">
+                  Cancel
+                </button>
+                <button
+                  class="btn btn-outline-info"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  onclick="myFunction()"
+                >
+                  Add Product
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Modal starts here -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!--Modal content starts here-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Form Values</h4>
+              <button class="close" type="button" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="modalBodyText">Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      //document.getElementById('dateSupplied').format = 'yyyy-mm-dd';
+
+      document
+        .getElementById('dateSupplied')
+        .setAttribute('format', 'yyyy-mm-dd');
+
+      function myFunction() {
+        let pNumber = document.getElementById('pNumber').value;
+        let quantity = document.getElementById('quantity').value;
+        let name = document.getElementById('name').value;
+        let price = document.getElementById('price').value;
+        let dateSupplied = document.getElementById('dateSupplied').value;
+        let supplier = document.getElementById('supplier');
+        let selectedValue = supplier.options[supplier.selectedIndex].value;
+        document.getElementById('modalBodyText').innerText =
+          '' +
+          document.querySelector("label[for='pNumber']").innerText +
+          ' : ' +
+          pNumber +
+          '\n' +
+          document.querySelector("label[for='quantity']").innerText +
+          ' : ' +
+          quantity +
+          '\n' +
+          document.querySelector("label[for='name']").innerText +
+          ' : ' +
+          name +
+          '\n' +
+          document.querySelector("label[for='price']").innerText +
+          ' : ' +
+          price +
+          '\n' +
+          document.querySelector("label[for='dateSupplied']").innerText +
+          ' : ' +
+          dateSupplied +
+          '\n' +
+          document.querySelector("label[for='supplier']").innerText +
+          ' : ' +
+          selectedValue;
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

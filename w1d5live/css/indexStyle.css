@@ -1,0 +1,14 @@
+/* This is indexStyle.css file */
+body {
+  background: url('../background.jpg') no-repeat center center fixed;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: 200px;
+  font-size: 30px;
+}
+h1 {
+  display: inline;
+}
